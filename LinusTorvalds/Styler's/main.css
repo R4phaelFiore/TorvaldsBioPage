@@ -1,0 +1,166 @@
+body 
+{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.efeito-txt
+{
+    visibility: hidden;
+}
+
+.background 
+{
+    position: fixed; 
+    top: 0;         
+    left: 0;         
+    width: 100vw;    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    background-color: rgb(0, 0, 0);
+    background-blend-mode: multiply;
+}
+
+.service 
+{
+    position: relative;
+    left: -15vw;
+    top: 39vh;
+}
+.service button {
+    background-color: #0056B3;
+    color: white;
+    border: none;
+    border-radius: 0.4vw;
+    padding: 2vh 1.6vw;
+    font-family: "JetBrains Mono";
+    font-size: 1.1vw;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, 0.2);
+}
+
+.service button:hover {
+    background-color: #004494;
+    transform: translateY(-0.3vw);
+}
+
+.service button:active {
+    transform: translateY(0);
+}
+
+.service h2 
+{
+    font-size: 2.6vw;
+    font-family: "JetBrains Mono";
+    color: white;
+    text-shadow: 0 2vw 2vw rgba(0, 0, 0, 0.2);
+}
+
+.service p 
+{
+    font-size: 1.4vw;
+    font-family: "JetBrains Mono";
+    color: white;
+    text-shadow: 0 0.8vw 0.9vw rgba(0, 0, 0, 0.2);
+}
+.imgLinus
+{
+    position: relative;
+    top: -2vw;
+    left: 38vw;
+    width: 48vh;
+    border-radius: 47vw;
+    border: #0056B3 0.4vw solid;
+}
+
+/* AREA BIOGRAFIA LINUS TORVALDS, LANDING PAGE FEITA POR: R4phaelFiore */
+.biografia 
+{
+    display: none;
+}
+.biografia ~ .imgLinus {
+    display: none;
+}
+.biografia button 
+{
+    background-color: #0056B3;
+    color: white;
+    border: none;
+    border-radius: 0.4vw;
+    padding: 2vh 1.6vw;
+    font-family: "JetBrains Mono";
+    font-size: 1.1vw;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, 0.2);
+}
+
+.biografia button:hover 
+{
+    background-color: #004494;
+    transform: translateY(-0.3vw);
+}
+
+.biografia button:active 
+{
+    transform: translateY(0);
+}
+
+.box-1
+{
+    position: relative;
+    background-color: transparent;
+    margin-top: 7vh;
+    top: 2vw;
+    left: -30vw;
+    width: 32vw;
+    height: 80vh;
+    border: #004494 0.2vw solid;
+    border-radius: 1vh;
+    backdrop-filter: blur(10px);
+}
+.box-1 h2 
+{
+    margin-top: 3vw;
+    margin-left: 2.5vw;
+    font-family: "JetBrains Mono";
+    font-size: 2vw;
+    color: white;
+}
+.box-1 p
+{
+    position: relative;
+    margin-top: 1.2vw;
+    margin-left: 1.2vw;
+    padding: 2vh 1.6vw;
+    font-family: "JetBrains Mono";
+    color: #4b4b4b;
+    font-size: 1.4vw;
+    top: -5vw;
+    transition: color 0.3s ease-in-out;
+}
+.box-1 p:hover
+{
+    cursor: pointer;
+    color: white;
+}
+.box-1:hover
+{
+    filter: drop-shadow(5px 5px 10px #0056B3);
+}
+.box-1 .linusIcon
+{
+    position: relative;
+    top: -6vw;
+    left: 24vw;
+    width: 12vh;
+    border-radius: 55vw;
+    border: #0056B3 0.2vw solid;
+}
